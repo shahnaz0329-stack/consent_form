@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parental Consent Form</title>
+</head>
+<body>
+    <h2>Parental Consent Form for Educational Visit</h2>
+    <form name="consentForm" action="consent.php" method="POST">
+        <fieldset>
+            <legend><b>Child Information</b></legend>
+            Name of Child: <input type="text" name="ChildName" required><br><br>
+            Class / Group: <input type="text" name="Class" required><br><br>
+            Date of Birth: <input type="date" name="DOB" required><br><br>
+            Emirates ID No: <input type="text" name="EID"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Visit Details</b></legend>
+            Visit Leader (Teacher): <input type="text" name="Leader"><br><br>
+            Visit to: <input type="text" name="VisitTo"><br><br>
+            Date of Visit: <input type="date" name="VisitDate"><br><br>
+            Medical condition (if any): <input type="text" name="Medical"><br><br>
+            Special dietary requirements: <input type="text" name="Diet"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Contact Details</b></legend>
+            Home Address: <input type="text" name="HomeAddress"><br><br>
+            Home Telephone: <input type="text" name="HomeTel"><br><br>
+            Mobile: <input type="text" name="Mobile"><br><br>
+            Work Address (Father): <input type="text" name="WorkFather"><br><br>
+            Work Telephone (Father): <input type="text" name="WorkTelFather"><br><br>
+            Work Address (Mother): <input type="text" name="WorkMother"><br><br>
+            Work Telephone (Mother): <input type="text" name="WorkTelMother"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Emergency Contact</b></legend>
+            Alternative Contact Name: <input type="text" name="EmergencyContact"><br><br>
+            Relationship to Child: <input type="text" name="Relation"><br><br>
+            Contact Number: <input type="text" name="EmergencyTel"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Doctor Details</b></legend>
+            Family Doctor: <input type="text" name="Doctor"><br><br>
+            Doctor’s Contact: <input type="text" name="DoctorTel"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Declaration</b></legend>
+            <p>I agree to my child participating in the visit and receiving any emergency dental, medical, or surgical treatment if required.</p>
+            <input type="checkbox" name="Agree" required> I have read and understood the terms and give my consent.<br><br>
+            Signature of Parent: <input type="text" name="Signature" required><br><br>
+            Date: <input type="date" name="ConsentDate" required><br><br>
+        </fieldset>
+
+        <input type="submit" value="Submit Consent">
+    </form>
+</body>
+</html>
